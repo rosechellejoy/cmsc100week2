@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> CMSC100 HTML </title>
+		<meta charset = "utf-8"/>
+	</head>
+	
+	<body>
+		<form method="POST" action="http://localhost:5000/students">
+		<input type="text" name="name" placeholder="Name" required=""/><br/>
+		<input type="text" name="studno" placeholder="Student Number" pattern="^[0-9]{4}-[0-9]{5}$" title="xxxx-xxxxx where x is a number" required=""/><br/>
+		<input type="email" name="email" placeholder="Email" required=""/><br/>
+		<input type="url" name="url" placeholder="Url" required=""/><br/>
+		<input type="color" name="color" placeholder="Color" required=""/><br/>
+		<input type="date" name="date" placeholder="Date" required=""/><br/>
+		<input type="range" name="range" placeholder="Range" required=""/><br/>
+		<input type="time" name="time" placeholder="Time" required=""/><br/>
+		<input type="number" name="number" placeholder="Number" required=""/><br/>
+		<input type="submit" value="Create"/>
+		</form>
+	</body>
+</html>

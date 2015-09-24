@@ -27,4 +27,5 @@ app.route('/student')
 app.use(require('body-parser')());  //nagreread ng forms ng input , nilalagay sa req-body
 app.use(require('method-override')());  //kelangan ng put, delete
 app.use(require(__dirname+'/config/router')(express.Router()));
+app.use(express.static(__dirname+'/public'));
 
